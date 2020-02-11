@@ -27,3 +27,6 @@ void loop() {
 
 delay(1000);
 }
+
+//A este código le falta establecer los valores de baseline
+//Y también el cálculo de la humedad absoluta, para esto ocupo la temperatura y humedad relativa. 
