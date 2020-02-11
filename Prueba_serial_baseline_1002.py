@@ -28,12 +28,12 @@ while True:
     
     with open(r'Baseline_file_01.csv', 'a') as b:
         Datos = csv.writer(b,delimiter=' ')
-        Datos.writerow([hex(line_fix)])        
+        Datos.writerow([line_fix])        
         
 
-    elapsed_time +=1
+##    elapsed_time +=1
     time.sleep(1)
         
-    if elapsed_time == 20:
-        break
-        
+##    if elapsed_time == 20:
+##        break
+##        

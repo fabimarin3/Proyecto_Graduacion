@@ -1,6 +1,3 @@
-
-
-
 texto = "b'4007768686,38903428230942394\\r\\n'"
 largo = len(texto)
 print(largo)
