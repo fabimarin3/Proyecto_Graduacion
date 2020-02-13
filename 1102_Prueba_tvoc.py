@@ -13,7 +13,7 @@ import serial
 ser = serial.Serial('/dev/ttyACM0', 9600)
 count = 0
 elapsed_time = 0
-with open(r'TVOC_file_Prueba.csv', 'a') as b:
+with open(r'TVOC_file_01.csv', 'a') as b:
     Datos = csv.writer(b,delimiter=',')
     Datos.writerow(['Sample','TVOC','eCO2'])
 
@@ -24,7 +24,7 @@ while True:
     line_fix=line_str[2:largo-5]
     data = str(elapsed_time)+','+line_fix
     print(line_fix)
-    with open(r'TVOC_file_Prueba.csv', 'a') as b:
+    with open(r'TVOC_file_01.csv', 'a') as b:
        Datos = csv.writer(b,delimiter=' ')
        Datos.writerow([data])        
         

@@ -27,7 +27,7 @@ while True:
     line_fix=line_str[2:largo-5]
     print(line_fix)
     
-    with open(r'Baseline_file_Prueba.csv', 'a') as b:
+    with open(r'Baseline_file_01.csv', 'a') as b:
         Datos = csv.writer(b,delimiter=' ')
         Datos.writerow([line_fix])        
         
