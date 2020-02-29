@@ -29,15 +29,15 @@ void setup() {
 //  Serial.println(sgp.serialnumber[2], HEX);
 
   // If you have a baseline measurement from before you can assign it to start, to 'self-calibrate'
-  //sgp.setIAQBaseline(0x8E68, 0x8F41);  // Will vary for each sensor!
+  sgp.setIAQBaseline(0x9769, 0x92CC);  // Will vary for each sensor!
 }
 
 int counter = 0;
 void loop() {
   // If you have a temperature / humidity sensor, you can set the absolute humidity to enable the humditiy compensation for the air quality signals
-  //float temperature = 22.1; // [°C]
-  //float humidity = 45.2; // [%RH]
-  //sgp.setHumidity(getAbsoluteHumidity(temperature, humidity));
+  float temperature = 23.178; // [°C]
+  float humidity = 26.392; // [%RH]
+  sgp.setHumidity(getAbsoluteHumidity(temperature, humidity));
 
   if (! sgp.IAQmeasure()) {
     Serial.println("Measurement failed");
