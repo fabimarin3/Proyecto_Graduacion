@@ -34,8 +34,8 @@ void setup() {
 int counter = 0;
 void loop() {
   // If you have a temperature / humidity sensor, you can set the absolute humidity to enable the humditiy compensation for the air quality signals
-  float temperature = 22.919; // [°C]
-  float humidity = 29.303; // [%RH]
+  float temperature = 23.301; // [°C]
+  float humidity = 27.177; // [%RH]
   sgp.setHumidity(getAbsoluteHumidity(temperature, humidity));
 
   if (! sgp.IAQmeasure()) {
