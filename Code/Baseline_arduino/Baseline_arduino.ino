@@ -29,7 +29,7 @@ void setup() {
 
 
   Serial.println("Baseline values"); 
-  Serial.print("eCO2: ");Serial.print("\t");Serial.println("TVOC: ");  
+  Serial.print("eCO2: ");Serial.print(" \t ");Serial.println("TVOC: ");  
 }
 
 int counter = 0;
@@ -56,6 +56,6 @@ void loop() {
       return;
     }
     Serial.print("0x");Serial.print(eCO2_base, HEX);
-    Serial.print("\t");Serial.print("0x");Serial.println(TVOC_base, HEX);
+    Serial.print(" \t ");Serial.print("0x");Serial.println(TVOC_base, HEX);
  
 }
